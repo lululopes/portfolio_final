@@ -1,0 +1,104 @@
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #18081b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-align: center;
+    color: #2760db;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.perfil-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 35px rgba(7, 200, 226, 0.6);
+    border: 3px solid #7350d4;
+    transform: scale(3deg);
+    transition: 0.3s ease;
+}
+
+.foto:hover {
+    background: rgb(111, 20, 230);
+    color: white;
+    box-shadow: none;
+}
+
+.texto {
+    flex: 2;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+ol,
+ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+ul {
+    font-weight: bold;
+}
+
+dl {
+    color: #5a3d61;
+}
+
+/* ESTILO PARA LISTA DE HABILIDADES */
+.lista-habilidades {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.habilidade-item {
+    background: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.habilidade-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.habilidade-item dt {
+    color: #6a11cb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-left: 4px solid #6a11cb;
+    padding-left: 10px;
+}
+
+.habilidade-item dd {
+    color: #555;
+    margin-left: 14px;
+    line-height: 1.5;
+}

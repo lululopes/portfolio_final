@@ -1,0 +1,250 @@
+/* seção SOBRE MIM */
+.sobre-mim {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sobre-mim h1 {
+    padding-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #18081b;
+    margin-bottom: 20px;
+}
+
+hr {
+    height: 3px;
+    background: linear-gradient(90deg, #933fa1, #142cb4, #25b8b8);
+    border: none;
+    margin: 20px 0;
+}
+
+.sobre-mim h2 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.palavrasGrifadas {
+    font-weight: bold;
+}
+
+/* sobre mim - HOBBYS (CONTAINER) */
+.hobbys-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.hobby-item {
+    width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.imagem-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.imagem-container img:hover {
+    transform: scale(1.05);
+}
+
+.hobby-item h3 {
+    font-size: 1.5rem;
+    color: #18081b;
+    margin-bottom: 15px;
+}
+
+.hobby-item p {
+    color: #555;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+/* seção família */
+.familia-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.familia-hr {
+    height: 2px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #ff9a9e);
+    border: none;
+    margin: 20px auto 40px;
+    width: 70%;
+}
+
+.familia-texto {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.familia-fotos {
+    display: grid;
+    grid-template-areas:
+        "mae . irmao"
+        ". nos .";
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.foto-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    border: 5px solid white;
+}
+
+.foto-nos1 {
+    grid-area: mae;
+    transform: rotate(-5deg);
+}
+
+.foto-nos2 {
+    grid-area: irmao;
+    transform: rotate(5deg);
+}
+
+.foto-nos3 {
+    grid-area: nos;
+    width: 220px;
+    height: 220px;
+    z-index: 2;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-container:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 0 8px 25px rgba(255, 154, 158, 0.3);
+    z-index: 3;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .familia-fotos {
+        grid-template-areas:
+            "mae irmao"
+            "nos nos";
+    }
+
+    .foto-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .foto-nos {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.gatos-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #18081b;
+    font-size: 2rem;
+}
+
+hr {
+
+    height: 3px;
+    background: linear-gradient(to right, #933fa1, #142cb4, #25b8b8);
+    margin: 20px auto;
+    width: 100%;
+}
+
+.gatos-grid {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+
+.gato-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gato-imagem {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.gato-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gato-info {
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #5e35b1;
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* EFEITO HOVER */
+.gato-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(93, 53, 177, 0.2);
+}
+
+.gato-card:hover .gato-imagem img {
+    transform: scale(1.1);
+}

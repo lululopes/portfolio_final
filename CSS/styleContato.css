@@ -1,0 +1,108 @@
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/*  principal */
+.container {
+    max-width: 800px;
+    margin: 89px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* formulário */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* campos formulário */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+/* botão enviar */
+.btn-enviar {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    color: white;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* efeito ao passar o mouse em cima */
+.btn-enviar:hover {
+    transform: scale(1.05);
+}
+
+/* Opções de contato */
+.opcoes-contato {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Botões de contato */
+.btn-contato {
+    background: linear-gradient(90deg, #39275a, #481a91);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-contato i {
+    font-size: 25px;
+}
+
+/* Efeito Hover nos botões */
+.btn-contato:hover {
+    color: white;
+}
+
+/* Layout Responsivo */
+@media (max-width: 600px) {
+    .contato-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+

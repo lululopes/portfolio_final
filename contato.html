@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleGERAL.css">
+    <link rel="stylesheet" href="CSS/styleContato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="sobreMim.html">Sobre mim</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="contato.html">Contato</a>
+            <div id="icone">
+                <a href="index.html"><img src="imagens/icone.png" alt="Ícone" height="50px" width="50px"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Entre em Contato!</h1>
+            <div class="contato-grid">
+                <!-- formulário -->
+                <form class="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" placeholder="Digite o assunto" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+                    <button type="submit" class="btn-enviar">
+                        <i class="fa-regular fa-paper-plane"></i> Enviar
+                    </button>
+                </form>
+                
+
+                <!-- Opções de Contato -->
+                <div class="opcoes-contato">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ludmilalopes416@gmail.com" class="btn-contato" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>E-mail
+                    </a>
+                    <a href="https://www.linkedin.com/in/ana-ludmila-lopes-b4a0a62a5" class="btn-contato"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2025 Ana Ludmila Lopes Oliveira - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
