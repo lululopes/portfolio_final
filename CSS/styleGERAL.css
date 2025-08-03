@@ -124,11 +124,10 @@ a:hover {
     display: block;
   }
 
- #icone {
+  #icone {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
+    padding-right: -120px;
+  }
 
   /* rodapé responsivo */
   footer {
