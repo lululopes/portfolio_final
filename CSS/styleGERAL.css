@@ -124,12 +124,10 @@ a:hover {
     display: block;
   }
 
- #icone {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  width: 100%;
-}
+  #icone {
+    display: flex;
+    margin-right: 150px;
+  }
 
   /* rodapé responsivo */
   footer {
