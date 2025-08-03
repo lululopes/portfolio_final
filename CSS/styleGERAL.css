@@ -110,22 +110,55 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* responsivo */
+/* Responsividade */
 @media (max-width: 768px) {
-    .hobbies-container {
+    /* header responsivo  */
+  #navbar {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+  }
+
+  #navbar a {
+    text-align: center;
+    display: block;
+  }
+
+  #icone {
+    display: flex;
+    padding-right: 120px;
+  }
+
+  /* rodapé responsivo */
+  footer {
+        padding: 15px 10px;
+        text-align: center;
+        position: static; /* para o footer não ficar fixo no celular, evita sobreposição */
+    }
+
+    .footer-container {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
-    
-    .hobby-item {
-        width: 80%;
+
+    .footer-info {
+        flex: none;
+        text-align: center;
+        font-size: 0.9rem;
     }
-    
-    .sobre-mim {
-        margin-top: 150px;
+
+    .footer-Redesocial {
+        justify-content: center;
+        gap: 15px;
+        font-size: 1rem;
+        flex-wrap: wrap;
     }
-    
-    main {
-        margin-bottom: 150px;
+
+    .footer-Redesocial a {
+        font-size: 1rem;
     }
+
 }
+
+  

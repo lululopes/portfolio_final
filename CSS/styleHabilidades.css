@@ -102,3 +102,68 @@ dl {
     margin-left: 14px;
     line-height: 1.5;
 }
+
+
+/* responsivo */
+@media (max-width: 768px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  main .container {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .perfil-horizontal {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .imagem .foto {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .texto {
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+
+  h1, h2 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  ol, ul {
+    padding-left: 20px;
+  }
+
+  li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .lista-habilidades {
+    padding: 0 10px;
+  }
+
+  .habilidade-item {
+    margin-bottom: 15px;
+  }
+
+  .habilidade-item dt {
+    font-size: 1rem;
+  }
+
+  .habilidade-item dd {
+    font-size: 0.9rem;
+  }
+}

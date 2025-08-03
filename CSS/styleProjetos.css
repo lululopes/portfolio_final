@@ -3,70 +3,102 @@ main {
     padding-bottom: 100px;
 }
 
-h1 {
+.container-projetos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0; /* remove espaços internos */
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+.container-projetos h1 {
+    padding-top: 20px;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #444;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .projetos-grid {
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
 }
 
 .projeto {
-    background: white;
+    background: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px #1ca3a373;
-    transition: 0.3s;
-    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px #1ca3a333;
+    transition: transform 0.3s;
 }
 
 .projeto:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px #151b1b73;
+    transform: translateY(-5px);
 }
 
 .projeto h3 {
     margin: 10px 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #444;
 }
 
 .projeto p {
     color: #666;
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#ferramentasUtilizadas {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
 }
 
 .projeto a {
     display: inline-block;
-    margin: 4px 8px;
-    padding: 10px 15px;
-    background: #2575fc;
+    margin: 6px 8px 6px 0;
+    padding: 8px 14px;
+    background: linear-gradient(90deg, #8c889b, #8d80a3);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
+    font-size: 0.9em;
     transition: 0.3s;
 }
 
 .projeto a:hover {
-    background: linear-gradient(90deg, #39275a, #481a91);
-    color: white;
+    transform: scale(1.05);
 }
 
-#ferramentasUtilizadas {
-    margin-left: 10px;
-}
+/* Responsivo */
+@media (max-width: 760px) {
+    .container-projetos {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+    }
 
-/* Estilo para o iframe */
-.mapa {
-    width: 100%;
-    height: 400px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .container-projetos h1 {
+        font-size: 1.6rem;
+    }
+
+    .projetos-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .projeto {
+        width: 300px;
+    }
 }

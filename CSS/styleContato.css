@@ -34,7 +34,8 @@ label {
 }
 
 /* campos formulário */
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 2px solid #ccc;
@@ -46,12 +47,12 @@ input, textarea {
 
 /* botão enviar */
 .btn-enviar {
-    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    background: linear-gradient(90deg, #5a328d, #220c3a);
     color: white;
     padding: 12px;
     margin: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 1rem;
     font-weight: bold;
     transition: 0.3s;
@@ -59,12 +60,12 @@ input, textarea {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
 }
 
-/* efeito ao passar o mouse em cima */
-.btn-enviar:hover {
-    transform: scale(1.05);
-}
+
 
 /* Opções de contato */
 .opcoes-contato {
@@ -76,7 +77,7 @@ input, textarea {
 
 /* Botões de contato */
 .btn-contato {
-    background: linear-gradient(90deg, #39275a, #481a91);
+    background-color: #200630;
     color: white;
     padding: 12px 20px;
     border-radius: 25px;
@@ -97,12 +98,46 @@ input, textarea {
     color: white;
 }
 
-/* Layout Responsivo */
-@media (max-width: 600px) {
-    .contato-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
+@media (max-width: 760px) {
+  main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    margin: 30px 15px;
+    padding: 20px 15px;
+    max-width: 100%;
+    box-shadow: none; /* opcional, para menos sombra no mobile */
+  }
+
+  .contato-grid {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+  }
+
+  .formulario {
+    padding: 0;
+  }
+
+  /* Botão enviar maior e mais largo */
+  .btn-enviar {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px auto 0 auto;
+    height: 45px;
+  }
+
+  /* Opções de contato lado a lado e centralizadas */
+  .opcoes-contato {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .btn-contato {
+    width: 140px;
+    justify-content: center;
+  }
 }
-
-
