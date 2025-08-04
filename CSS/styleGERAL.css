@@ -126,7 +126,8 @@ a:hover {
 
   #icone {
     display: flex;
-    margin-right: -100px;
+    justify-content: center;
+    margin: 10px 0 0 0; /* posicionamento melhor */
   }
 
   /* rodapé responsivo */
