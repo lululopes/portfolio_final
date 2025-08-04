@@ -128,6 +128,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 10px 0 0 0; /* posicionamento melhor */
+    order: 6; /* faz o ícone aparecer no DESKTOP no modo celular*/
   }
 
   /* rodapé responsivo */
