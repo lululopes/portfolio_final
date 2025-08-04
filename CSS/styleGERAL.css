@@ -132,34 +132,44 @@ a:hover {
 }
 
 #navbar a {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin: 8px 0;
+    padding: 6px 12px;
     color: white;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    width: 80%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: 0.3s ease;
+    width: auto;
     text-align: center;
 }
 
 #navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.08);
+    transform: scale(1.03);
     color: #29bdbd;
 }
+
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 
-  #icone {
+ #icone {
     display: flex;
     justify-content: center;
-    margin: 10px 0 0 0; /* posicionamento melhor */
-    order: 6; /* faz o ícone aparecer no DESKTOP no modo celular*/
-  }
+    margin: 12px 0 0 0;
+}
+
+#icone img {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 6px;
+}
+
 
   /* rodapé responsivo */
   footer {
