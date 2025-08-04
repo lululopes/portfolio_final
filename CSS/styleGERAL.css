@@ -149,6 +149,10 @@ a:hover {
     color: #29bdbd;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 
   #icone {
     display: flex;
