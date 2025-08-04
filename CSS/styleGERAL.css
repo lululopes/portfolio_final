@@ -124,6 +124,32 @@ a:hover {
     display: block;
   }
 
+  #navbar {
+    background-color: #18081b;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#navbar a {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 80%;
+    text-align: center;
+}
+
+#navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+    color: #29bdbd;
+}
+
+
   #icone {
     display: flex;
     justify-content: center;
